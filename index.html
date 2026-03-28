@@ -2,11 +2,53 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Site Perso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaud Breloy - Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Mon Titre</h1>
-    <p>Bienvenue sur ma page...</p>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">Arnaud Breloy</span>
+            <ul>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Talks</a></li>
+                <li><a href="#">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="profile-container">
+        <aside class="sidebar">
+            <img src="votre-photo.png" alt="Photo de profil" class="profile-pic">
+            <h1 class="name">Arnaud Breloy</h1>
+            <p class="title">Professor</p>
+            <p class="institution">CNAM</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="#"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </aside>
+
+        <section class="content">
+            <h2>About</h2>
+            <p>Currently professor at <a href="#">CNAM</a> and the <a href="#">CEDRIC</a> laboratory.</p>
+            
+            <p>Doing research about statistics and optimization methods for various applications in machine learning and signal processing:</p>
+            
+            <ul>
+                <li>Dimension reduction and variable selection: probabilistic/sparse PCA, graphical models, robust subspace recovery, low-rank matrix factorization.</li>
+                <li>Information geometry: performance bounds, Riemannian optimization, and classification/clustering with metrics induced by statistical models.</li>
+                <li>Statistical signal processing: robust signal subspace and structured covariance matrix estimation, adaptive detection/beamforming.</li>
+            </ul>
+        </section>
+    </main>
+
 </body>
 </html>
